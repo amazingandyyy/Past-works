@@ -1,0 +1,57 @@
+<head>
+
+<title>Try Z-index</title>
+
+    <style>
+    
+        div{
+        
+        background-color: rgba(0,0,0,1)
+        
+        }
+        
+    #bottom {
+        background-color: rgba(255,180,230,1);
+    height: 400px;
+    
+    }
+        
+        #break {
+        background-color: rgba(255,180,230,0);
+    height: 400px;
+    
+    }
+    
+    #upper {
+        background-color: yellow;
+    display: block;
+    height: 400px;
+        width: 800px;
+        z-index: -1;
+        position: fixed;
+        left:10px;
+    top:300px;
+    
+    }
+        
+    #scroll {
+    
+    height: 500px;
+    
+    }
+        
+    </style>
+    
+    
+    
+</head>
+
+<body>
+
+    <div id=bottom></div>
+    <div id=break></div>
+    <div id=upper></div>
+    <div id=scroll></div>
+
+
+</body>

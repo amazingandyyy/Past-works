@@ -1,0 +1,16 @@
+.container10 {
+	float: left;
+	content: url(file:///Users/Andysign/Desktop/My%20Websites/d.willo/images/qrcheck.png);
+	top: -200px;
+	z-index: -1;
+	position: fixed;
+	width: 100%;
+	height: auto;
+	margin: auto;
+	font-family: Ubuntu, sans-serif;
+	color: white;
+	text-align: center;
+	padding: 0px;
+	background-color: rgba(0, 0, 0, 0.2);
+    display: none;
+}

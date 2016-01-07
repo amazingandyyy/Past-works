@@ -1,0 +1,985 @@
+<html>
+    <head>
+        
+        <title>SWALLET</title>
+        
+        <style>
+            
+    
+            
+            
+            body {
+            
+                background-color: #fff ;
+            
+            }
+            
+            * {
+            
+                font-family: Kannada MN;
+                
+                font-weight: 300;
+                
+
+            }
+            
+            .break {
+            
+                clear: both;
+            
+            }
+            
+            div {
+            
+                margin: 0px;
+                
+                padding: 0px;
+                
+            }
+            
+            #container1 {
+
+             
+                width: auto;
+                
+                margin: -10px;
+                
+                height: 80px;
+                          
+                
+            }
+            
+            #centerbox {
+            
+                margin: auto;
+                
+                padding-top: 10px;
+                
+
+                                
+                width: 1000px;
+                
+          
+                
+                text-align: center;
+                
+            }
+            
+            
+            #mainlogo {
+            
+                width: 200px;
+                
+                float: left;
+                
+                position: relative;
+                
+                top: 15px;
+                
+                margin-bottom: 20px;
+                
+            }
+            
+            
+            #container2 {
+            
+                width: auto;
+                
+                margin: -10px;
+                
+                height: 600px;
+                            
+                background-image: url(image/topbackground2.png);
+                background-size: auto 700px;
+                background-repeat: no-repeat;
+                background-position:top center;
+                
+                position: relative;
+                
+                top: -0px;
+                
+                z-index: 0;
+            }
+            
+            #container2 p {
+            
+                font-family: Kannada MN;
+                
+                font-weight: 300;
+            
+                padding: 0px;
+                
+                margin: 0px;
+                
+                line-height: auto;
+            }
+            
+            #box {
+            
+                height: suto;
+                
+                margin: 270px 100px 0px 0px;
+                
+                padding: 10px;
+                
+                float: right;
+            
+                color: white;
+                
+                text-align: center;
+                
+            
+            }
+         
+            
+            #rightor {
+            
+                position: relative;
+                
+                top:20px;
+
+            }
+            
+            #box a {
+            
+                text-decoration: none;
+                
+                font-family: Helvetica Neue;
+                
+                font-weight: 500;
+            
+                color: white;
+            
+            }
+            
+            #box a:hover {
+            
+                text-decoration: underline;
+            
+            }
+            
+            
+            #firsttitle {
+            
+                height: auto;
+
+                font-family: Kannada MN;
+                
+                font-weight: 300;
+            
+                color: gray;
+                
+                text-align: center;
+                
+                background-color: white;
+                
+                margin: -10px;
+
+                padding: 1px;
+                
+                display: none;
+            
+            }
+            
+            #singup {
+            
+                color: gray;
+                
+                margin-bottom:90px;
+            
+                text-align: center;
+                
+                display: none;
+            }
+            
+            #singup a {
+            
+                text-decoration: none;
+                
+                font-family: Helvetica Neue;
+                
+                font-weight: 500;
+            
+                color: gray;
+            
+            }
+            
+            #singup a:hover {
+            
+                text-decoration: underline;
+            
+            }
+            
+            #singupnow {
+            
+                background-color: #20c05c;
+                
+                width: 220px;
+                
+                height: 43px;
+                
+                position: relative;
+                
+                top: 15px;
+                
+                border: 0px solid black;
+                
+                border-radius: 100px;
+            
+                font-family: Helvetica Neue;
+                
+                font-weight: 500;
+                
+                letter-spacing: 1px;
+                
+                color: white;
+                
+                font-size: 20px;
+                
+                transition: all .3s ease-in-out;
+                
+            }
+            
+            #singupnow:hover {
+            
+                background-color: #24d666;
+            
+                transition: all .3s ease-in-out;
+            }
+            
+            #container3 {
+            
+                width: auto;
+                
+                margin: -10px;
+                
+                height: 70px;
+                            
+                background: linear-gradient(to right, #26818C, #31AC72 );
+             
+                position: relative;
+                
+                top: -40px;
+                
+                padding-top: 20px;;
+                
+                padding-bottom: 16px;
+                
+            
+                
+                text-align: center;
+                
+                color: white;
+                
+            }
+            
+            #container3 img {
+            
+                width: 450px;
+            
+                margin: 0px;
+            
+                float: left;
+                
+                margin-left: 40px;
+            }
+            
+            #container3 p {
+            
+                float: left;  
+                
+                margin-left: 35px;
+                
+                position: relative;
+                
+                top:-14px;
+                
+                font-family: Verdana;
+                font-weight: 400;
+                
+            }
+            
+            #learnmore {
+            
+                float: right;
+                margin: 0px;
+                padding: 0px;
+                background-color: white;
+                color: #257781;
+                width: 150px;
+                height: 45px;
+                border: 0px solid white;
+                border-radius: 5px;
+                font-family: Helvetica Neue;
+                font-weight: 500;
+                font-size: 0.9em;
+                letter-spacing: 0.6px;
+                
+                transition: all .4s ease-in-out;
+            }
+            
+            #learnmore:hover {
+            
+                background-color: #257781;
+                color: white;
+                transition: .2s ease-in-out;
+            
+            }
+            
+            
+            #container4 {
+            
+                width: auto;
+                
+                margin: -10px;
+                
+                height: 450px;
+                            
+                background: linear-gradient(to right, #faf5ec, #dcd1b9 );
+             
+                position: relative;
+                
+                top: -30px;
+                
+                padding-top: 20px;;
+                
+                padding-bottom: 16px;
+                
+                text-align: center;
+                
+                color: white;
+                
+                
+            }
+            
+            
+             #leftspecial {
+            
+                float: left;
+                
+                width: 400px;
+
+                margin: 90px 0px 10px 200px;
+                 
+                color: #606060;
+                 
+                text-align: center;
+            
+            }
+            
+            
+            #bookandlaptop {
+            
+                width: 700px;
+            
+                float: right;
+                
+                margin-right: 5%;
+                
+                position: relative;
+                
+                bottom: -80px;
+            
+            }
+            
+           #line {
+           
+                position: relative;
+               
+                top:-8px;
+           }
+         
+            
+            #leftspecial p {
+            
+                font-size: 1em;
+                
+                line-height: 25px;
+                
+                font-family: Helvetica Neue;
+                font-weight: 400;
+            
+            }
+            
+            
+            #container5 {
+            
+                width: auto;
+                
+                margin: -10px;
+                
+                height: 450px;
+                            
+                background-image: url(image/wood.png);
+                background-size: 430px;
+                background-repeat: repeat;
+                background-position:left-center;
+             
+                position: relative;
+                
+                top: -30px;
+                
+                padding-top: 20px;;
+                
+                padding-bottom: 16px;
+                
+                text-align: center;
+                
+                color: white;
+                
+                
+            }
+            
+            
+             #ipad {
+            
+            height: 386px;
+            
+                float: left;
+                
+                margin-left: 5%;
+                
+                position: relative;
+                
+                bottom: -80px;
+            
+            
+            }
+            
+            #rightpecial {
+            
+                float: right;
+                
+                width: 400px;
+
+                margin: 90px 200px 10px 0px;
+                 
+                color: white;
+                 
+                text-align: center;
+            
+            }
+            
+            
+            #rightspecial p {
+            
+                font-size: 1em;
+                
+                line-height: 25px;
+                
+                font-family: Helvetica Neue;
+                font-weight: 400;
+
+            
+            }
+            
+            #container6 {
+            
+                width: auto;
+                
+                margin: -10px;
+                
+                height: 450px;
+                            
+                background: linear-gradient(to right, #eeeeee, #c1c0bf );
+             
+                position: relative;
+                
+                top: -30px;
+                
+                padding-top: 20px;;
+                
+                padding-bottom: 16px;
+                
+                text-align: center;
+                
+                color: white;
+                
+                
+            }
+            
+            
+            #iphone {
+            
+            height: 400px;
+            
+                float: right;
+                
+                margin-right: 5%;
+                
+                position: relative;
+                
+                bottom: -66px;
+            
+            
+            }
+            
+            
+            
+            #container7 {
+
+             
+                width: auto;
+                
+                margin: -10px;
+                
+                height: 590px;
+                          
+                
+            }
+            
+            
+            #pricelogo {
+            
+                width: 1000px;
+                
+                margin: auto;
+            
+                margin-top: 10px;
+            }
+            
+            
+            #pricefixdiv {
+            
+                margin: auto;
+                
+                padding-top: 10px;
+                                
+                width: 1000px;
+                
+                height: 530px;
+
+            }
+            
+            
+            #pricebox1 {
+            
+                width: 280px;
+                height: 300px;
+
+                margin:auto;
+                float: left;
+                position: relative;
+                top:40px;
+                padding: 0px 0px 0px 10px;
+            }
+            
+            #pricebox2 {
+            
+                width: 280px;
+                height: 300px;
+
+                margin: auto;
+                position: relative;
+                top:40px;
+                padding: 0px 70px 0px 25px;
+            
+            }
+            
+            #pricebox3 {
+            
+                width: 280px;
+                height: 300px;
+
+                margin: auto;
+                float: right;
+                position: relative;
+                top: -260px;
+                padding: 0px 60px 0px 0px;
+            
+            }
+            
+            .priceimg {
+            
+                width: 200px;
+            
+                margin-left: 45px;
+                display: block;
+                
+                margin: auto;
+            }
+            
+            #price2 {
+            
+                color: #327E58 ;
+                font-family: Helvetica Neue;
+                font-weight: 500;
+                margin-left: 45px;
+            }
+            
+            #price3 {
+            
+                color: #5BA9AE  ;
+                font-family: Helvetica Neue;
+                font-weight: 500;
+                margin-left: 45px;
+            }
+            
+            #freebutton {
+            
+                background-color: #cccccc;
+                
+                width: 220px;
+                
+                height: 43px;
+                
+                position: relative;
+                
+                top: 50px;
+                left: 20px;
+                
+                border: 0px solid black;
+                
+                border-radius: 100px;
+            
+                font-family: Helvetica Neue;
+                
+                font-weight: 500;
+                
+                letter-spacing: 1px;
+                
+                color: white;
+                
+                font-size: 20px;
+                
+                transition: all .3s ease-in-out;
+                
+            }
+            
+            #freebutton:hover {
+            
+                background-color: #4AC073 ;
+            
+                transition: all .2s ease-in-out;
+            }
+            
+            #prbutton {
+            
+                background-color: #cccccc;
+                
+                width: 220px;
+                
+                height: 43px;
+                
+                position: relative;
+                
+                top: 12px;
+                left: 20px;
+                
+                border: 0px solid black;
+                
+                border-radius: 100px;
+            
+                font-family: Helvetica Neue;
+                
+                font-weight: 500;
+                
+                letter-spacing: 1px;
+                
+                color: white;
+                
+                font-size: 20px;
+                
+                transition: all .3s ease-in-out;
+                
+            }
+            
+            #prbutton:hover {
+            
+                background-color: #327E58 ;
+            
+                transition: all .2s ease-in-out;
+            }
+            
+            #bsbutton {
+            
+                background-color: #cccccc;
+                
+                width: 220px;
+                
+                height: 43px;
+                
+                position: relative;
+                
+                top: 12px;
+                left: 20px;
+                
+                border: 0px solid black;
+                
+                border-radius: 100px;
+            
+                font-family: Helvetica Neue;
+                
+                font-weight: 500;
+                
+                letter-spacing: 1px;
+                
+                color: white;
+                
+                font-size: 20px;
+                
+                transition: all .3s ease-in-out;
+                
+            }
+            
+            #bsbutton:hover {
+            
+                background-color: #5BA9AE ;
+            
+                transition: all .2s ease-in-out;
+            }
+            
+            .priceinfo {
+                
+                text-align: center;
+                position: relative;
+                top: 60px;
+                color: #404040;
+                font-family: Helvetica Neue;
+                position: relative;
+                left: 20px;
+                top: 55px;
+                font-weight: 500;
+            }
+            
+            .priceinfo2 {
+                
+                text-align: center;
+                position: relative;
+                top: 20px;
+                color: #404040;
+                font-family: Helvetica Neue;
+                position: relative;
+                left: 20px;
+                top:20px;
+                font-weight: 500;
+            }
+            
+            
+            #container8 {
+                background: linear-gradient(to top,#8e8e8e ,#eeeeee);
+                margin: -10px;
+                margin-top: -100px;
+                height: 480px;
+            }
+            
+            #container8 p {
+                text-align: center;
+                color: #606060;
+                margin: 0;
+                padding: 0px;
+                width: 600px;
+                position: relative;
+                top: 40px;
+                font-size: 1.9em;
+                position: relative;
+                left: 200px;
+            }
+            
+            
+            #devices {
+                margin: auto;
+                height: 350px;
+                position: relative;
+                top:-80px;
+                display: block;
+                
+                margin: auto;
+            }
+            
+             #container9 {
+                margin: -10px;
+                height: 130px;
+            }
+            #mainlogo2 {
+                width: 150px;
+                display: block;
+                margin: auto;
+                position: relative;
+                top:50px;
+               
+            
+            
+            }
+            
+            
+        </style>
+        
+    </head>
+    
+    
+    <body>
+        
+        <div id="container1">
+            
+            <div id="centerbox">
+                
+                <div id=mainlogodiv>                
+                    
+                    <img src="image/mainlogo.png" / id="mainlogo">
+                    
+                </div>
+                
+                
+            </div>
+
+        </div> 
+        
+        <div id="firsttitle">
+            
+            <p><span style="font-size:2.4em;">Your Smart Wallet</span><br/><span style="font-size:1.3em;">For every one who whant to save money. <br/>Swallet is the smartest finance plan.</span></p>
+                
+                
+            </div>
+        
+        <div id="container2">
+            <div id="box">
+            
+                <p><span style="font-size:2.4em;">Your Smart Wallet</span><br/><span style="font-size:1.3em;">For every one who whant to save money. <br/>Swallet is the smartest finance plan.</span></p>
+            
+                <button id="singupnow">Sign up now</button>
+                
+                <p style="font-size:1.4em" id="rightor";>or <a href="">sign in</a></p>
+                
+        </div>
+            
+            
+            </div>
+            
+                
+        </div>    
+        
+        <div id="break"></div>
+        
+        <div id="singup">
+            
+                <button id="singupnow">Sign up now</button>
+                
+                <p style="font-size:1.4em;">or <a href="">sign in</a></p>
+                
+        </div>
+        
+        
+        <div id="container3">            
+            
+            <div id="centerbox">
+            
+                <img src="image/banner.png"/>
+                 
+                <p>The new innovative algorithm,<br/> make swallet a smart-saving wallet.</p><button id="learnmore">LEARN MORE</button>
+            
+        </div>
+        
+    </div>
+    
+         <div id="container4">            
+             
+             <div id="leftspecial">
+                 <h1>WIDER SCREEN</h1><img src="image/line1.png"/ id="line"><p>WRITE
+From short lists to lengthy research, no matter what form your writing takes, Evernote keeps you focused on moving those ideas from inspiration to completion.</p>
+             </div>
+                <img src="image/bookandlaptop.png"/ id="bookandlaptop">
+             
+        </div>
+        
+        <div id="container5">            
+             
+             <div id="rightpecial">
+                 <h1>TAKE IT EVERYWHERE</h1><img src="image/line2.png"/ id="line"><p>Easily to sync with your mobile. Clip web articles, capture handwritten notes, and snap photos to keep the physical and digital details of your projects with you at all times.</p>
+             </div>
+                <img src="image/ipad.png"/ id="ipad">
+             
+        </div>
+    
+        <div id="container6">            
+             
+             <div id="leftspecial">
+                 <h1>TAKE IT EVERYWHERE</h1><img src="image/line1.png"/ id="line"><p>Easily to sync with your mobile. Clip web articles, capture handwritten notes, and snap photos to keep the physical and digital details of your projects with you at all times.</p>
+             </div>
+                <img src="image/iphone.png"/ id="iphone">
+             
+        </div>
+    
+        <div id="container7">
+            
+            <div id="centerbox">
+
+                <div id="pricefixdiv">
+                    
+                    <img src="image/pricelogo.png" / id="pricelogo">
+                    
+                    <div id="pricebox1">
+                        
+                        <img src="image/free.png"/ class="priceimg">
+                        <p id="price1"></p>
+                    
+                        <button id="freebutton">Sign up</button>
+                       
+                        <p class="priceinfo">
+                  
+                            Organize your life.
+
+<br />Workspace for daily projects Keep everything together Sync across all devices
+                      
+                        </p>
+                    </div>
+                    
+                    <div id="pricebox2">
+                        
+                        <img src="image/premium.png"/ class="priceimg">
+                        <p id="price2">$5 / MONTH</p>
+                        <button id="prbutton">Go Premium</button>
+                        
+                        <p class="priceinfo2">
+                  
+                            Organize your life.
+
+<br />Workspace for daily projects Keep everything together Sync across all devices
+                      
+                        </p>
+                    </div>
+                        
+                    <div id="pricebox3">
+                        
+                        <img src="image/business.png"/ class="priceimg">
+                        <p id="price3">$10 / MONTH</p>
+                        <button id="bsbutton">Get Started</button>
+                        
+                        <p class="priceinfo2">
+                  
+                            Organize your life.
+
+<br />Workspace for daily projects Keep everything together Sync across all devices
+                      
+                        </p>
+                    </div>
+                    
+                </div>
+                
+                
+            </div>
+
+        </div>
+    
+        <div id="container8">            
+              <div id="centerbox">
+             
+                 <p>Available on everything you use every day.
+
+</p>
+                <img src="image/devices.png"/ id="devices">
+             
+            </div>
+    </div>
+    
+    <div id="container9">
+    
+        <img src="image/mainlogo.png" / id="mainlogo2">
+    
+    
+    
+    </div>
+    
+    </body>    
+    
+</html>

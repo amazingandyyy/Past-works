@@ -1,0 +1,804 @@
+<html>
+
+    <head>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    
+        <title>Willo-The first Volunteer Platform APP</title>
+        
+        <link rel="stylesheet" type="text/css" href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+        
+        <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+        
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+        
+        <style>
+     
+            div {
+                
+                background-color: rgba(0,0,0,0);
+                margin: auto;
+                padding: 0px;
+                text-align: center;
+                color: white;
+                font-family: 'Ubuntu', sans-serif;
+            
+            }
+            
+            .break {
+            
+                clear: both;
+                
+            }
+            
+            
+            /*1*/
+            
+            .container1 {
+
+                margin: -8px -8px 0px -8px;
+                min-width: 1100px;
+                background-color: white;
+        
+            }
+        
+            .centerdiv1 {
+            
+                width: 1100px;
+                height: 100px;
+                padding-top: 20px;
+                
+            }
+            
+            
+
+            #top-logo-div {
+            
+                width: 380px;
+                float: left;
+                margin-left: 20px;
+                display: inline-block;
+                position: relative;
+                top: 50%;
+                
+                -webkit-transform: translatey(-50%); 
+                -moz-transform: translatey(-50%); 
+                -o-transform: translatey(-50%); 
+                transform: translatey(-50%);
+                content: url(images/logo.png);    
+                
+            }
+            
+            /*2*/
+            
+            .container2 {
+            
+                margin: 0px -8px 0px -8px;
+                min-width: 1100px;
+                background-image: url(images/mainbackground.png);
+                background-size: auto 100%;
+                background-repeat: no-repeat;
+                background-position:top center;    
+     
+            }
+            
+            .centerdiv2 {
+            
+                width: 1100px;
+                height: 800px;
+      
+            }
+            
+            
+            #box-one {
+                
+                float: left;            
+                width: 600px;
+                height: 250px;
+                display: inline-block;
+                position: relative;
+                top: 50%;
+                
+                -webkit-transform: translatey(-50%); 
+                -moz-transform: translatey(-50%); 
+                -o-transform: translatey(-50%); 
+                transform: translatey(-50%);
+                position: relative;
+                margin-left: 30px;
+            
+            }
+            
+            #box-one h1 {
+                
+                text-align: left;
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 6.3em;
+                line-height: 90px;
+                letter-spacing: -5px;
+                color: white ;
+                text-align: center;
+                
+            }
+            
+            
+            #singup {
+            
+                width: 240px;
+                height: 55px;
+                color: #666666;
+                border-radius: 100px;
+                border: 0px solid white;
+                background-color: white;
+                font-family: Helvetica Neue;
+                font-weight: 500;
+                font-size: 1.5em;
+                position: relative;
+                top: -20px;
+                left: 200px;
+                float: left;
+                line-height: 55px;
+                transition: all .3s ease-in-out;
+                
+            }
+            
+            #singup:hover {
+                
+                color: white;
+                transition: all .1s ease-in-out;
+                background-color: #FF5E39;
+                
+            }
+            
+            #login {
+                
+                font-size: 1.3em;
+                color: white;
+                float: left;
+                position: relative;
+                left: 30px;
+                top: 5px;
+                text-decoration: none;
+                
+            }
+            
+            .underline:hover {
+                
+                text-decoration: underline;
+            
+            }
+            
+            /*3*/
+            
+            .container3 {
+                
+                min-width: 1100px;
+                margin: 0px -8px 0px -8px;
+                background: linear-gradient(to right, #FF5E39, #FF7F39  );     
+            }
+            
+            .centerdiv3 {
+            
+                width: 1100px;
+                height: 160px;
+            
+            }
+            
+            
+            #banner {
+            
+                width: 800px;
+                content: url(images/banner.png);
+                
+                -webkit-transform: translatey(50%); 
+                -moz-transform: translatey(50%); 
+                -o-transform: translatey(50%); 
+                transform: translatey(50%);
+                float: left;
+                margin-left: 40px;
+                position: relative;
+                top: 5px;
+                
+            }
+            
+            #learnmore {
+            
+                float: left;
+                
+                background-color: white;
+                color: #FF5E39;
+                width: 200px;
+                height: 60px;
+                border-radius: 5px;
+
+                font-family: Helvetica Neue;
+                font-weight: 500;
+                font-size: 1.2em;
+                letter-spacing: 0.6px;
+                line-height: 60px;                
+                
+                transition: all .4s ease-in-out;
+                margin-left: 20px;
+                position: relative;
+                top: 50%;
+                -webkit-transform: translatey(-50%); 
+                -moz-transform: translatey(-50%); 
+                -o-transform: translatey(-50%); 
+                transform: translatey(-50%);
+
+            }
+            
+            #learnmore:hover {
+                
+                background-color: #c93500;
+                transition: all .3s ease-in-out;
+                color: white;
+               
+            }
+            
+            
+             /*4*/
+            
+            .container4 {
+                
+                min-width: 1100px;
+                margin: 0px -8px 0px -8px;
+                background: linear-gradient(to right, #ebeaea, #bdbcbc  );
+              
+            }
+            
+            .centerdiv4 {
+            
+                width: 1100px;
+                height: 600px;
+
+            }
+            
+            
+            #image-right {
+                
+                content: url("images/iphone.png");
+                height: 450px;                
+                float: right;
+                margin: 50px;
+                position: relative;
+                top: 100px;
+                
+            }
+            
+            #intro-text-left {
+            
+                width: 200px;
+                float: left;
+                display: inline-block;
+                position: relative;
+                top: 100px;
+                margin-left: 50px;
+                
+            }
+            
+            #intro-text-left-top {
+            
+                content: url("images/iphone-text.png");
+                width: 500px;
+        
+            }
+            
+            .dlicon {
+                
+                height: 70px;
+                opacity: 0.4;
+                margin: 20px 10px 0px 0px ;
+                float: right;
+                position: relative;
+
+            }
+            
+            .dlicon:hover {
+            
+                opacity: 1;            
+                transition: all .2s ease-in-out;
+
+            }
+            
+            #download {
+                
+                color: 6d6d6d;
+                float: left;
+                position: relative;
+                left: 215px;
+                font-size: 1.1em;
+                
+            }
+             
+            /*5*/
+            
+            .container5 {
+                
+                min-width: 1100px;
+                margin: 0px -8px 0px -8px;
+                background: linear-gradient(to right, #dad0b6, #f4efe3);
+                
+            }
+            
+            .centerdiv5 {
+            
+                width: 1100px;
+                height: 600px;
+            
+            }
+            
+            #image-left {
+            
+                width: 800px;
+                float: left;
+                display: inline-block;
+                margin-top: 200px;
+                content: url("images/macbookair.png");
+                position: relative;
+                left: -250px;
+            
+            }
+              
+            /*9*/
+            
+            .container9 {
+                
+                height: 700px;
+                margin: 0px -8px; 0px; -8px;
+                background-color: rgba(0,0,0,0);
+                width: 1100px;
+                min-width: 1100px;
+                display: none;
+            
+            }
+            
+            /*10*/
+            .container10 {
+                
+                margin: 0px -8px 0px -8px;
+                height: auto;
+                position:fixed;
+                z-index: -1;
+                top: -200px;
+                content: url("images/qrcheck.png");
+                float: left;
+                display: none;
+                
+            }
+            
+            
+            
+            
+            #intro-text-right {
+            
+                width: 300px;
+                float: left;
+                display: inline-block;
+                position: relative;
+	               right: 30px;
+                top: 400px;
+                
+                -webkit-transform: translatey(-50%); 
+                -moz-transform: translatey(-50%); 
+                -o-transform: translatey(-50%); 
+                transform: translatey(-50%);
+                margin-right: 20px;
+                margin: -100px;
+                
+            }
+            
+            #intro-text-right-top {
+            
+                content: url("images/macbookair-text.png");
+                width: 500px;
+                position: relative;
+                right: 100px;
+                
+            }
+        
+            
+            .dlicon:hover {
+            
+            opacity: 1;            
+            transition: all .2s ease-in-out;
+
+            }
+            
+            #webicon {
+                
+                height: 70px;
+                opacity: 0.4;
+                margin: 20px 10px 0px 0px ;
+                float: left;
+                position: relative;
+                
+            }
+            
+            #webicon:hover {
+            
+                opacity: 1;            
+                transition: all .2s ease-in-out;
+
+            }
+            
+            
+            
+            /*6*/
+            
+            .container6 {
+                
+                background: linear-gradient(to bottom, #545454, #bdbcbc  );
+                margin: 0px -8px 0px; -8px;
+                min-width: 1100px;
+
+            }
+            
+            .centerdiv6 {
+            
+                width: 1000px;
+                height: 2500px;
+                padding: 40px;
+                      
+            }
+            
+            #intro1 {
+            
+                width: 800px;
+                float: left;
+                display: inline-block;
+                position: relative;
+                margin: 20px;
+                margin: auto;
+                
+            }
+            
+            #intro2 {
+            
+                width: 800px;
+                float: right;
+                display: inline-block;
+                position: relative;
+                margin: 20px;
+                margin: auto;
+                
+            }
+          
+            #break6 {
+            
+                height: 100px;
+            
+            }
+             /*11*/
+            
+            .container11 {
+                
+                min-width: 1100px;
+                margin: 0px -8px 0px -8px;
+                background-color: white;
+            }
+            
+            .centerdiv11 {
+            
+                width: 1000px;
+                height: 300px;
+                padding: 40px;
+      
+            }
+            
+            #box-three-left {
+            
+                width: 30%;
+                float: left;
+                display: inline-block;
+                position: relative;
+                top: 50%;
+                
+                -webkit-transform: translatey(-50%); 
+                -moz-transform: translatey(-50%); 
+                -o-transform: translatey(-50%); 
+                transform: translatey(-50%);
+                
+                margin: auto;
+                content: url("images/gofb.png");
+
+                
+            }
+            
+            .bottom-box-hover {
+            
+                opacity: 0.5;
+                transition: all 0.5s ease-in-out;
+                border-radius: 15px;
+                
+            }
+            
+            .bottom-box-hover:hover {
+            
+                opacity: 1;
+                transition: all .1s ease-in-out;
+                box-shadow: 1px 10px 100px gray;
+            }
+            
+            #box-three-center {
+            
+                width: 30%;
+                display: inline-block;
+                position: relative;
+                top: 50%;
+                
+                -webkit-transform: translatey(-50%); 
+                -moz-transform: translatey(-50%); 
+                -o-transform: translatey(-50%); 
+                transform: translatey(-50%);
+                
+                margin: auto;
+                content: url("images/goblog.png");
+            
+            }
+            
+            #box-three-right {
+            
+                width: 30%;
+                float: right;
+                display: inline-block;
+                position: relative;
+	           
+                top: 50%;
+                -webkit-transform: translatey(-50%); 
+                -moz-transform: translatey(-50%); 
+                -o-transform: translatey(-50%); 
+                transform: translatey(-50%);
+                
+                content: url("images/gojoin.png");
+                
+            }
+            
+            /*7*/
+            
+            .container7 {
+                
+                min-width: 1100px;
+                margin: 0px -8px 0px -8px;
+                height: 600px;
+                
+            }
+            
+            .centerdiv7 {
+            
+                width: 1000px;
+                padding: 30px;
+      
+            }
+            
+            #gofb {
+                
+                float: left;
+                width: 400px;
+                display: inline-block;
+                
+            }
+            
+            #goblog {
+                
+                width: 400px;
+                float: left;
+                display: inline-block;
+                
+            }
+            
+            #gojoin {
+                
+                float: left;
+                width: 400px;
+                display: inline-block;
+                
+            }
+        
+            /*8*/
+            
+            .container8 {
+                
+                min-width: 1100px;
+                margin: 0px -8px 0px -8px;
+                border-bottom: 1px solid white;
+                height: 215px;
+                background: linear-gradient(to right, #FF5E39, #FF7F39  );
+                
+            }
+        
+            #buttom-logo-div {
+            
+                width: 300px;
+                content: url("images/logo2.png");
+                display: inline-block;
+                position: relative;
+                top: 80px;
+                
+                -webkit-transform: translatey(-50%); 
+                -moz-transform: translatey(-50%); 
+                -o-transform: translatey(-50%); 
+                transform: translatey(-50%);
+                margin-bottom: 40px;
+                
+            }
+            
+            .container8 a {
+            
+                text-decoration: none;
+                color: white;
+                
+            }
+            
+            .container8 a:hover {
+            
+                text-decoration: underline;
+            
+            }
+        
+        </style>
+        
+    </head>
+    
+    <body>
+        
+       
+    
+        <!--area1-->
+        <div class="container1" class="center">
+        
+            <div class="centerdiv1">
+            
+                <div id="top-logo-div">
+                
+                </div>
+            
+            </div>
+        
+        </div>
+        <div class="break"></div>
+        <!--area2-->
+        <div class="container2">
+            
+            <div class="centerdiv2">
+            
+                <div id="box-one">
+                    <h1>Be Volunteer <br> like a boss</h1>
+
+                    <a href="http://www.willo.tw/register/" target="_blank"><div id="singup">SIGN UP</div></a><br>
+                    <a href="http://www.willo.tw/login/" id="login" target="_blank"><p>or <b class="underline"> LOG IN</b></p></a>
+                </div>
+                
+            </div>
+        
+        </div>
+        
+        <!--area3-->
+        <div class="container3">
+        
+            <div class="centerdiv3">
+            
+                <div id="banner">
+                
+                        
+                </div>
+            
+                <a href="https://medium.com/@iwillo.co/-bbc85cc80dc9" target="_blank"><div id="learnmore">LEARN MORE</div></a>
+            </div>
+        
+        </div>
+        
+        <!--area4-->
+        <div class="container4">
+        
+            <div class="centerdiv4">
+            
+                <div id="image-right">
+                
+                </div>
+                
+                <div id="intro-text-left">
+                <div id="intro-text-left-top"></div>
+                    
+                    <a href="https://play.google.com/store/apps/details?id=com.taiwanmobile.volunteers" target="_blank"><img src="images/googleplay-icon.png" / class="dlicon"></a>
+                    <a href="https://itunes.apple.com/tw/app/wei-le-zhi-gong/id823341128?l=zh&mt=8" target="_blank"><img src="images/appstore-icon.png" / class="dlicon"></a>
+                
+                </div>
+            
+            </div>
+        
+        </div>
+        
+ 
+       
+
+        <!--area6-->
+        <div class="container6">
+        
+            <div class="centerdiv6">
+                <div id="break6"></div>
+                <img src="images/intro1.png" id="intro1" />
+                <img src="images/intro2.png" id="intro2" />
+                <div class="break"></div>
+                <img src="images/intro3.png" id="intro1" />
+                <img src="images/intro4.png" id="intro2" />
+                
+            </div>
+        
+        </div>
+            <!--area9-->
+        <div class="container9" >
+        
+                
+        </div>
+        
+        <!--area10-->
+        <div class="container10" >
+        
+            <div id="centerqrcode"></div>
+        </div>
+        <!--area5-->
+        <div class="container5">
+        
+            <div class="centerdiv5">
+            
+                <a href="http://www.willo.tw" target="_blank"><div id="image-left"></div></a>
+
+                <div id="intro-text-right">
+                <div id="intro-text-right-top"></div>
+                    <a href="http://www.willo.tw" target="_blank"><img src="images/web-icon.png" / id="webicon"></a>
+                    
+                
+                </div>
+            
+            </div>
+        
+        </div>
+        
+        
+       
+        
+        <!--area11-->
+        <div class="container11">
+        
+            <div class="centerdiv11">
+                
+                <a href="http://www.facebook.com/iwillo.co" target="_blank"><div id="box-three-left" class="bottom-box-hover">
+                
+                    </div></a>
+                
+                <a href="https://medium.com/@iwillo.co" target="_blank"><div id="box-three-center" class="bottom-box-hover">
+                
+                    </div></a>
+                
+                <a href="http://www.willo.tw/join/" target="_blank"><div id="box-three-right" class="bottom-box-hover">
+                
+                    </div></a>
+            
+            </div>
+        
+        </div>
+    
+      
+        <!--area8-->
+        <div class="container8" >
+        
+                <div id="buttom-logo-div">
+                
+                </div>
+            <div class="break"></div>
+            <p>Designed by <a href="https://www.facebook.com/zzchentw" target="_blank">Andysign</a> in Mountian View, California <br>copyright  2013-2014</p>
+        </div>
+        
+        <script>
+     
+        
+        
+        
+        
+        </script>
+        
+        
+        
+    
+    </body>
+
+</html>

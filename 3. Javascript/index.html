@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+    <title>Learning Javascript</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <style>
+        
+        body {
+            background-color:white;
+            transition:all .5s ease-in-out;            
+        }
+        
+        * {
+            font-family: Verdana;
+            color: #565656;
+        }
+        
+       /* #box {
+            width: 100px;
+            background-color: #00d4ff;
+            height: 100px;
+            box-shadow: rgba(0,0,0,0.5) 0px 0px 60px;
+            display: none;
+            border-radius: 200px;
+            position: relative;
+        }*/
+        
+        #box {
+            width: 100px;
+            position: relative;
+            
+        }
+        
+        h2 {
+            position: relative;
+         
+        }
+        
+        #area {
+            width: 900px;
+            height: 900px;
+            border: 2px solid #565656;
+            margin: 10px;
+            padding-left: 20px;
+        }
+        
+        #break {
+        
+        }
+        
+    </style>
+    
+</head>
+
+<body>    
+    <div id="area">
+        <h1>Test your actions!</h1>
+        <p>*Tips:Click the boxes as quick as you can!</p>
+        <div id=break></div>
+        <h2>Your reaction time: <span id="time" >(0)</span></h2>
+    
+        <img src="fly.png" id="box"></div> 
+    </div>
+        
+    <script type="text/javascript" src="script.js"></script>    
+       
+    
+</body>
+</html>
+
+
+<!-- function adding(a, b) {
+        
+            return(a + b);
+        }
+        
+        document.getElementById("myButton").onclick = function() {
+  
+
+            document.getElementById("result").innerHTML = adding(3, 4);
+            
+        }
+        
+        
+        
+        
+        
+        
+        
+             document.getElementById("myButton").onclick = function() {
+        
+            var a = Math.random();
+            a = a * 5 +1;
+            a = Math.floor(a);
+            
+            if (document.getElementById("answer").value == a) {
+            
+                alert("Congratulations!! That's right !!");
+            
+            } else {
+            
+                alert("Unfortunately..It is " + a);
+            }
+        }
+        
+        
+        var arrayString = "";
+        
+        var array = ["A", "B", "C"];
+        
+        for (var i=0; i<array.length; i++) {
+            
+            arrayString = arrayString + array[i] + " ";
+        
+        }
+        
+        document.getElementById("arrayString").innerHTML = arrayString;
+        
+        
+        
+        var arrayString = "";
+        
+        var array = ["A", "B", "C"];
+        
+        var i = 0;
+        
+        while (i<array.length) {
+            
+            arrayString = arrayString + array[i] + " ";
+        
+            i++
+        }
+        
+        document.getElementById("arrayString").innerHTML = arrayString;
+     
+        
+        document.getElementById("myButton").onclick = function() {
+                        
+        var gotit = false; var guesses = 1; var i;
+            
+        while (gotit == false) {
+            
+        i = Math.random();
+        i = i * 6;
+        i = Math.floor(i);
+        
+        if (document.getElementById("answer").value == i) {
+           
+            gotit = true;
+            
+        } else {
+  
+            guesses++;
+            
+        }
+        }
+            alert("Got it! It was " + i + ". It took me " + guesses + " guesses")
+        }
+           -->
+ 

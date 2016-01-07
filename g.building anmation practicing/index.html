@@ -1,0 +1,56 @@
+<html>
+    <head>
+    <title>Animation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    <style>
+
+    
+        
+        
+.box-one{
+  position: absolute;
+  display: block;
+  width: 15px;
+  height: 15px;
+  top: 86px;
+  left: 200px;
+  box-shadow: 0px 0px 5px 1px #333;
+}
+.box-one.red{
+  background-color: #c52735;
+  animation: move-box 9s linear infinite;
+    -webkit-animation: move-box 9s linear infinite;
+}
+@keyframes move-box {
+  0% {
+    top: 3px;
+    left: 420px;
+  }
+  100% {
+    top: 73px;
+    left: -180px;
+  }
+}
+        
+@-webkit-keyframes move-box {
+  0% {
+    top: 3px;
+    left: 420px;
+  }
+  100% {
+    top: 73px;
+    left: -180px;
+  }
+}
+        @media only screen and (max-width: 980px) {
+         .box-one{display: none}
+    }
+    </style>
+        
+    </head>
+    <body>
+        
+        <div class='box-one red'></div>    
+    </body>
+</html>

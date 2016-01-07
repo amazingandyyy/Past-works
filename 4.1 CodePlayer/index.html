@@ -1,0 +1,228 @@
+<html>
+
+<head>
+    <title>Learning jQuery</title>
+    
+    <script type="text/javascript" src="jquery-1.11.1.min.js"></script>   
+    <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+
+    
+    <style>
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+        }
+        
+        #menuBar {
+            width: 100%;
+            height: 60px;
+            background-color: #e0e0e0;
+            border-bottom: 1px solid gray;   
+        }
+        
+        #logo {
+            padding: 15px 0px 0px 20px;
+            font-size: 1.6em;
+            font-weight: 600;
+            float: left;
+        }
+    
+        #toggles {
+
+            padding: 0;
+            list-style: none;
+            margin: 0px auto;
+            width: 255.7px;
+            height: 40px;
+            border: 1px solid gray;
+            border-radius: 3px;
+            position: relative;
+            top: 9px;
+        }
+        
+        #toggles li {
+            float: left;
+            border-right: 1px solid gray;
+            padding: 11px 8px 11px 8px;
+        }
+        
+        #buttonDiv {
+        
+            float: right;
+            margin: 10px;
+            padding: 0px;
+        }
+        
+        #runButton {
+            width: 80px;
+            height: 40px;
+            border-radius: 40px;
+            border: 1px solid gray;
+            
+            font-size: 1em;
+            font-family: Helvetica Neue;
+            font-weight: 300;
+            
+            transition: .5s;
+        }
+        #runButton:hover {
+            background-color: gray;
+            color: white;
+            box-shadow: 0px 1px 10px gray;
+            transition: .3s;        
+        }
+        
+        .break {
+            clear:both;
+        }
+        
+        .codeContainer {
+            width:  50%;
+            float: left;
+            position: relative;
+            
+        }
+        
+        .codeContainer textarea {
+        
+            border: none;
+            border-right: 1px solid gray;
+            height: 100%;
+            width: 100%;
+            padding: 25px 10px;
+            margin: 0px;
+            font-size: 0.9em;
+            font-family: 'Inconsolata', serif;
+        }
+    
+        .codeLabel {
+        
+            position: absolute;
+            right: 10px;
+            top: 5px;
+            font-weight: 600;
+        }
+        #CSSContainer, #JavaScriptContainer {
+        display: none;
+        }
+        
+        #resultContainer iframe {
+        
+            border: none;
+            height: 100%;
+            width: 100%;
+            
+            margin-top: 25px;
+            margin-left: 10px;
+            font-size: 0.9em;
+            font-family: 'Inconsolata', serif;
+        }
+        
+        .selected {
+            box-shadow:  inset 0 0 10px #565656;
+            transition: .05s ease-in-out;        
+                      
+            
+        }
+    </style>
+    
+    
+    </head>
+    
+    <body>
+    
+        <div id="wrapper">
+        
+            <div id="menuBar">
+            
+                <div id="logo">CodePlayer</div>
+                
+                
+                
+                <div id="buttonDiv">
+                <button id="runButton">Run</button>
+                </div>
+                <ul id="toggles">
+                    <li class="toggle selected">HTML</li>
+                    <li class="toggle">CSS</li>
+                    <li class="toggle">JavaScript</li>
+                    <li style="border:none" class="toggle selected">Result</li>
+                </ul>
+            </div>
+            
+        <div class="break"></div>
+        <div class="codeContainer" id="HTMLContainer">
+        
+            <div class="codeLabel">HTML</div>
+            <textarea id="htmlCode"></textarea>
+            
+        </div>
+        <div class="codeContainer" id="CSSContainer">
+        
+            <div class="codeLabel">CSS</div>
+            <textarea id="cssCode"></textarea>
+            
+        </div>
+        <div class="codeContainer" id="JavaScriptContainer">
+        
+            <div class="codeLabel">Javascript</div>
+            <textarea id="jsCode"></textarea>
+            
+        </div>
+        <div class="codeContainer" id="ResultContainer">
+        
+            <div class="codeLabel">Result</div>
+            <iframe id="resultFrame"></iframe>
+            
+        </div>
+</div> 
+        
+        <script>
+            
+            $(".codeContainer").height($(window).height()-$("#menuBar").height()*2+"px");
+            
+            $(".toggle").click(function(){
+            
+                $(this).toggleClass("selected")
+                
+                $("#"+$(this).html()+"Container").toggle();
+                
+                var showingDivs = $(".codeContainer").filter(function(){
+                
+                    return($(this).css("display") != "none");
+                
+                }).length;
+                
+                var width = 100/showingDivs;
+                
+                $(".codeContainer").width(width+"%");
+                
+            });
+            
+            $("#runButton").click(function() {
+                
+                $("iframe").contents().find("html").html(
+                    "<style>"+
+                    $("#cssCode").val()+
+                    "</style>"+
+                    "<html>"+                    
+                    $("#htmlCode").val()+
+                    "</html>"
+                                    
+                );
+                
+                document.getElementById("resultFrame").contentWindow.eval($("#jsCode").val());
+                
+            });
+            
+            
+        
+        </script>
+
+    
+    </body>
+
+</html>
